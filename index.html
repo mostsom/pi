@@ -79,6 +79,7 @@
         l = l.split('?')
         l = parseInt(l[1])
         var s = "" + computePI(l)
+        document.cookie = 'pi='+s
         forget.innerHTML = s
         s = s.slice(2)
         console.log(s)
